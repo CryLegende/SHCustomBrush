@@ -1,0 +1,208 @@
+LootTable:
+  cle_ordi:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: TRIPWIRE_HOOK
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Clé
+            Ordinaire"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Ces
+            clés sont obtenables"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"en
+            votant pour Skyhand !"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":""}],"text":""}'
+          - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"»
+            "},{"bold":false,"italic":false,"color":"yellow","clickEvent":{"action":"open_url","value":"https://skyhand.fr/vote"},"text":"https://skyhand.fr/vote"},{"bold":false,"italic":false,"color":"yellow","text":""}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":""}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Clic
+            droit sur la box "},{"italic":false,"color":"yellow","text":"Ordinaire"}],"text":""}'
+          enchants:
+            LUCK: 1
+          ItemFlags:
+          - HIDE_ENCHANTS
+          PublicBukkitValues: |-
+            {
+                "shcrates:shcrates_keyid": "14660341-49c1-4ad0-a53f-c2e943292d4a"
+            }
+    chance: 8.99
+  echo_shard:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: ECHO_SHARD
+    chance: 0.01
+  sable:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: SAND
+        amount: 16
+    chance: 12
+  sniffer:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: SNIFFER_EGG
+    chance: 5
+  dromadaire:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: CAMEL_SPAWN_EGG
+    chance: 5
+  exp250:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EXPERIENCE_BOTTLE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":true,"italic":false,"color":"green","text":"Experience
+            "},{"bold":false,"italic":false,"color":"gray","text":"(Clic droit)"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Experience
+            condensée en bouteille"}],"text":""}'
+          - '{"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Valeur:
+            "},{"italic":false,"color":"gray","text":"250 EXP"}],"text":""}'
+          custom-model-data: 1
+          internal: H4sIAAAAAAAA/+NiYGBj4E4KzyzJSClKLI8ocMh3YAABRga2JOeixLQSRgYAR0rd+SQAAAA=
+    chance: 15
+  exp1000:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EXPERIENCE_BOTTLE
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":true,"italic":false,"color":"green","text":"Experience
+            "},{"bold":false,"italic":false,"color":"gray","text":"(Clic droit)"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Experience
+            condensée en bouteille"}],"text":""}'
+          - '{"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Valeur:
+            "},{"italic":false,"color":"gray","text":"1,000 EXP"}],"text":""}'
+          custom-model-data: 2
+          internal: H4sIAAAAAAAA/+NiYGBj4E4KzyzJSClKLI8ocOh3YAABRga2JOeixLQSRgYAlmR9sCQAAAA=
+    chance: 5
+  redstone:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: REDSTONE
+        amount: 3
+    chance: 13
+  pousse_cerisier:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: CHERRY_SAPLING
+    chance: 8
+  greelamp1:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: OCHRE_FROGLIGHT
+        amount: 8
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"0.05
+            Niv. d''île"}],"text":""}'
+    chance: 3.0
+  greelamp2:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: VERDANT_FROGLIGHT
+        amount: 8
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"0.05
+            Niv. d''île"}],"text":""}'
+    chance: 3.0
+  greelamp3:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: PEARLESCENT_FROGLIGHT
+        amount: 8
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"0.05
+            Niv. d''île"}],"text":""}'
+    chance: 3.0
+  nid_abeille:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: BEE_NEST
+    chance: 3
+  abeilles:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: BEE_SPAWN_EGG
+        amount: 2
+    chance: 5
+  deep_renforce:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: REINFORCED_DEEPSLATE
+    chance: 1
+  # spawner_phantom:
+  #   serializedItem: |
+  #     item:
+  #       ==: org.bukkit.inventory.ItemStack
+  #       v: 3578
+  #       type: SPAWNER
+  #       meta:
+  #         ==: ItemMeta
+  #         meta-type: TILE_ENTITY
+  #         display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Spawner
+  #           à "},{"italic":false,"color":"yellow","text":"Phantom"}],"text":""}'
+  #         internal: H4sIAAAAAAAA/0WOzQ7BQBSFj1HCJP6Cveew9LOsCPZycTHRztR0Gq0n9FjajsTdnOTmyzmfBCT6i8icH2vtlCsOdJPo7hN66RU5kmhz/e9AqAtGsdJ8tnR18+RO2pkYEBiFlG+Y7KmoOxSnaAv0QqV9D0dU4NNE443yysyrrAjK/0RzJjDe8TNTli/b8sF2R/rGGArIGluaTDsEXmX6V4nN6ZhWANsuBjW6Na7ypijFb7Pwm77JFwcCLS83Ab6BiaVwCgEAAA==
+  #         blockMaterial: SPAWNER
+  #   chance: 1
+  spawner_pig:
+    serializedItem: |
+      item:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Spawner
+            à "},{"italic":false,"color":"yellow","text":"Cochon"}],"text":""}'
+          internal: H4sIAAAAAAAA/0WOzQ6CMBCEx6JEmvgX9e5zePTniDHq3Sy6kkYsWkoEn9DHEqgJe5lk8u3MSEBiuErSy32rrbLliWKJ4Pikt96QJQmfG78Poa4YPJTmi6GbXT5VDAhMQip2TCYqm3/FGXyBQai0y+CESnw9dD6ortKi1pqgoiW8hcD0wK9cGb7uK4PNgXTMGAvIBlunubbouhnzdsYjjc5ZDbAJMGrQfWrrzZRk+HeWrtMlueCuQM+NmwE/I2kK6gYBAAA=
+          blockMaterial: SPAWNER
+    chance: 10
