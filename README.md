@@ -22,13 +22,24 @@ Utilisé sur : **Opale**.
 
 | Commande | Alias | Description | Permission |
 |---|---|---|---|
-| `/shcustombrush` | — | Ajouter des items custom au loot de brossage. | — |
+| `/shcustombrush add <nom> <chance>` | — | Ajoute l'objet en main à la table de loot (le remplace s'il existe). | `shcustombrush.admin.add` |
+| `/shcustombrush remove <nom>` | — | Retire une entrée. | `shcustombrush.admin.remove` |
+| `/shcustombrush list` | — | Liste les entrées, leur poids et leur part du total. | `shcustombrush.admin.list` |
+| `/shcustombrush reload` | — | Relit `config.yml` et `messages.yml`. Un fichier illisible ne change rien. | `shcustombrush.admin.reload` |
+
+Sans argument, ou avec une sous-commande inconnue, une ligne d'usage ne liste que les sous-commandes permises à l'expéditeur. Seul `add` demande un joueur (objet en main) ; les autres marchent depuis la console.
 
 ## Permissions
 
 | Permission | Description | Par défaut |
 |---|---|---|
-| `shcustombrush.add` | Permet d'ajouter des items à la table de loot | `op` |
+| `shcustombrush.admin` | Toute l'administration (parent des quatre nœuds suivants). | `op` |
+| `shcustombrush.admin.add` | Ajouter l'objet en main à la table de loot. | `op` |
+| `shcustombrush.admin.remove` | Retirer une entrée. | `op` |
+| `shcustombrush.admin.list` | Lister la table de loot. | `op` |
+| `shcustombrush.admin.reload` | Recharger la configuration. | `op` |
+
+`config.yml` contient à la fois les réglages et la table `LootTable`, que `add` et `remove` réécrivent ; les commentaires du fichier sont conservés.
 
 ## Configuration
 
@@ -36,7 +47,8 @@ Fichiers par défaut repris du serveur (secrets remplacés par `CHANGE_ME`). Cli
 
 <pre>
 plugins/SHCustomBrush/
-└── <a href="src/main/resources/config.yml">config.yml</a>
+├── <a href="src/main/resources/config.yml">config.yml</a>
+└── <a href="src/main/resources/messages.yml">messages.yml</a>
 </pre>
 
 ## Compilation

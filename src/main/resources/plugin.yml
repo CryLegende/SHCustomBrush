@@ -6,10 +6,27 @@ author: Cry_Legende
 
 commands:
   shcustombrush:
-    description: Ajouter des items custom au loot de brossage.
-    usage: /shcustombrush add <nom_item>
+    description: Gérer les items custom du loot de brossage.
+    usage: /shcustombrush <add|remove|list|reload>
 
 permissions:
-  shcustombrush.add:
-    description: Permet d'ajouter des items à la table de loot
+  shcustombrush.admin:
+    description: Toute l'administration de SHCustomBrush
+    default: op
+    children:
+      shcustombrush.admin.add: true
+      shcustombrush.admin.remove: true
+      shcustombrush.admin.list: true
+      shcustombrush.admin.reload: true
+  shcustombrush.admin.add:
+    description: Ajouter l'objet en main à la table de loot
+    default: op
+  shcustombrush.admin.remove:
+    description: Retirer une entrée de la table de loot
+    default: op
+  shcustombrush.admin.list:
+    description: Lister la table de loot
+    default: op
+  shcustombrush.admin.reload:
+    description: Recharger config.yml et messages.yml
     default: op

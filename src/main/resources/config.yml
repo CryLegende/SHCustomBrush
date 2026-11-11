@@ -1,3 +1,29 @@
+# ======================================================================== #
+# SHCustomBrush
+#
+# Plugin : ajoute des objets personnalisés au loot du brossage des blocs suspects (gravier et sable). Quand un bloc
+# vide est brossé, un objet de LootTable est tiré au sort, avec pour poids la chance de chaque entrée.
+#
+# Commande (alias : aucun) :
+#   /shcustombrush add <nom> <chance>   Ajoute l'objet en main (ou le remplace s'il existe) avec le poids <chance>.
+#   /shcustombrush remove <nom>         Retire une entrée.
+#   /shcustombrush list                 Liste les entrées, leur poids et leur part du total.
+#   /shcustombrush reload               Relit ce fichier et messages.yml. Un fichier illisible ne change rien.
+#
+# Permissions (par défaut : op) :
+#   shcustombrush.admin          Toutes les sous-commandes.
+#   shcustombrush.admin.add      /shcustombrush add
+#   shcustombrush.admin.remove   /shcustombrush remove
+#   shcustombrush.admin.list     /shcustombrush list
+#   shcustombrush.admin.reload   /shcustombrush reload
+#
+# Les textes sont dans messages.yml.
+#
+# LootTable.<nom> :
+#   chance          Poids de l'entrée : la probabilité est chance / somme des chances.
+#   serializedItem  Objet sérialisé. Il est écrit par /shcustombrush add, ne pas l'éditer à la main.
+# ======================================================================== #
+
 LootTable:
   cle_ordi:
     serializedItem: |

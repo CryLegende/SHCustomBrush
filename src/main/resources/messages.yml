@@ -1,0 +1,33 @@
+# Messages de SHCustomBrush. Couleurs avec &. Un message vide ("") n'est pas envoyé.
+#
+# Variables :
+#   %subcommands%  sous-commandes que l'expéditeur peut utiliser, séparées par |
+#   %name%         nom d'une entrée de la table
+#   %chance%       poids d'une entrée
+#   %percent%      part d'une entrée dans le total, en pourcentage
+#   %total%        somme des poids
+#   %count%        nombre d'entrées
+#   %item%         type d'objet d'une entrée
+#   %names%        entrées invalides
+#   %file%         fichier illisible
+#   %error%        première ligne de l'erreur du fichier
+
+no-permission: "&7&l« &f&lSH &8&l» &fCommande inconnue, essayez autre chose."
+usage: "&7&l« &6&lSH &8&l» &7Utilisation : &6/shcustombrush <%subcommands%>"
+usage-add: "&7&l« &6&lSH &8&l» &7Utilisation : &6/shcustombrush add <nom> <chance>"
+usage-remove: "&7&l« &6&lSH &8&l» &7Utilisation : &6/shcustombrush remove <nom>"
+player-only: "&7&l« &c&lSH &8&l» &7Cette commande demande un &cjoueur&7."
+hold-item: "&7&l« &c&lSH &8&l» &7Vous devez tenir un &cobjet &7en main."
+invalid-chance: "&7&l« &c&lSH &8&l» &7La chance doit être un &cnombre positif &7(décimales acceptées)."
+config-unreadable: "&7&l« &c&lSH &8&l» &7config.yml est &cillisible&7 : rien n'a été écrit. Corrigez le fichier puis &c/shcustombrush reload&7."
+save-failed: "&7&l« &c&lSH &8&l» &7Écriture de config.yml &cimpossible&7, voir la console."
+loot-added: "&7&l« &a&lSH &8&l» &7Objet ajouté sous le nom &a%name% &7avec une chance de &a%chance%&7."
+loot-removed: "&7&l« &a&lSH &8&l» &7Entrée &a%name% &7supprimée."
+loot-not-found: "&7&l« &c&lSH &8&l» &7L'entrée &c%name% &7n'existe pas."
+list-empty: "&7&l« &e&lSH &8&l» &7La table de loot est vide."
+list-header: "&7&l« &6&lSH &8&l» &6%count% &7entrée(s), total &6%total%&7 :"
+list-entry: "&8• &f%name% &7(%item%, chance %chance%, &e%percent%&7 %)"
+list-invalid: "&7&l« &e&lSH &8&l» &7Entrée(s) invalide(s) ignorée(s) : &e%names%&7."
+reload-ok: "&7&l« &a&lSH &8&l» &7Configuration rechargée : &a%count% &7entrée(s)."
+reload-invalid: "&7&l« &e&lSH &8&l» &7Entrée(s) invalide(s) ignorée(s) : &e%names%&7."
+reload-error: "&7&l« &c&lSH &8&l» &7Rechargement annulé, &crien n'a été changé&7. Fichier &c%file%&7 : &c%error%"
