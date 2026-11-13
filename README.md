@@ -43,7 +43,7 @@ Sans argument, ou avec une sous-commande inconnue, une ligne d'usage ne liste qu
 
 ## Configuration
 
-Fichiers par défaut repris du serveur (secrets remplacés par `CHANGE_ME`). Cliquez sur un fichier pour l'ouvrir :
+Fichiers par défaut, avec des valeurs d'exemple. Cliquez sur un fichier pour l'ouvrir :
 
 <pre>
 plugins/SHCustomBrush/
